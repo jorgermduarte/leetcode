@@ -63,6 +63,7 @@ func productExceptSelf2(nums []int) []int {
 	return result
 }
 
+// O(n)
 func productExceptSelf(nums []int) []int {
 	output := make([]int, len(nums))
 	prefixArr := make([]int, len(nums))

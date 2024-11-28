@@ -60,15 +60,4 @@ func reverseWords_example2(s string) string {
 	fields := strings.Fields(s)
 	slices.Reverse(fields)
 	return strings.Join(fields, " ")
-	for i := len(splitted) - 1; i >= 0; i-- {
-		current := splitted[i]
-		if current != "" {
-			result += current
-			if i != 0 {
-				result += " "
-			}
-		}
-	}
-
-	return strings.Trim(result, " ")
 }
